@@ -286,6 +286,7 @@ void psb_irq_preinstall(struct drm_device *dev)
 	/* Revisit this area - want per device masks ? */
 	if (dev_priv->ops->hotplug)
 		dev_priv->vdc_irq_mask |= _PSB_IRQ_DISP_HOTSYNC;
+
 	dev_priv->vdc_irq_mask |= _PSB_IRQ_ASLE;
 
 	/* This register is safe even if display island is off */
