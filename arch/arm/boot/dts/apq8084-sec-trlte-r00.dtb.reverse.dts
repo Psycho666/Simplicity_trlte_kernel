@@ -4588,7 +4588,7 @@
 					regulator-name = "8084_s6";
 					qcom,set = <0x3>;
 					status = "okay";
-					regulator-min-microvolt = <0xc6f98>;
+					regulator-min-microvolt = <0xaae60>;
 					regulator-max-microvolt = <0xdbba0>;
 				};
 
