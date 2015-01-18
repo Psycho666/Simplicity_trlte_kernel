@@ -128,7 +128,7 @@ config CPU_FREQ_DEFAULT_GOV_BLUACTIVE
 
 config CPU_FREQ_DEFAULT_GOV_INTELLIACTIVE
 	bool "intelliactive"
-	select CPU_FREQ_GOV_PEGASUSQ
+	select CPU_FREQ_GOV_INTELLIACTIVE
 	help
 	Use the CPUFreq governor 'intelliactive' as default.
 
