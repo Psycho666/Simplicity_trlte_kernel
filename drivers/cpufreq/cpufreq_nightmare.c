@@ -729,7 +729,11 @@ static void do_nightmare_timer(struct work_struct *work)
 {
 	struct cpufreq_nightmare_cpuinfo *nightmare_cpuinfo;
 	int delay;
+<<<<<<< HEAD
 	unsigned int cpu;
+=======
+	unsigned int cpu = this_nightmare_cpuinfo->cpu;
+>>>>>>> 2d4b3e4... cpufreq: Update cpugovernors
 
 	nightmare_cpuinfo = container_of(work, struct cpufreq_nightmare_cpuinfo, work.work);
 	cpu = nightmare_cpuinfo->cpu;
@@ -744,23 +748,39 @@ static void do_nightmare_timer(struct work_struct *work)
 		delay -= jiffies % delay;
 	}
 
+<<<<<<< HEAD
 #ifdef CONFIG_CPU_EXYNOS4210
 	mod_delayed_work_on(cpu, system_wq, &nightmare_cpuinfo->work, delay);
 #else
 	queue_delayed_work_on(cpu, system_wq, &nightmare_cpuinfo->work, delay);
 #endif
 	mutex_unlock(&nightmare_cpuinfo->timer_mutex);
+=======
+	mod_delayed_work_on(cpu, system_wq,
+			&this_nightmare_cpuinfo->work, delay);
+	mutex_unlock(&this_nightmare_cpuinfo->timer_mutex);
+>>>>>>> 2d4b3e4... cpufreq: Update cpugovernors
 }
 
 static int cpufreq_governor_nightmare(struct cpufreq_policy *policy,
 				unsigned int event)
 {
+<<<<<<< HEAD
 	unsigned int cpu;
 	struct cpufreq_nightmare_cpuinfo *this_nightmare_cpuinfo;
 	int rc, delay;
 
 	cpu = policy->cpu;
 	this_nightmare_cpuinfo = &per_cpu(od_nightmare_cpuinfo, cpu);
+=======
+	struct cpufreq_nightmare_cpuinfo *this_nightmare_cpuinfo;
+	unsigned int cpu = policy->cpu;
+	int io_busy = nightmare_tuners_ins.io_is_busy;
+	int rc, delay;
+
+	this_nightmare_cpuinfo = &per_cpu(od_nightmare_cpuinfo, cpu);
+	this_nightmare_cpuinfo->cpu = cpu;
+>>>>>>> 2d4b3e4... cpufreq: Update cpugovernors
 
 	switch (event) {
 	case CPUFREQ_GOV_START:

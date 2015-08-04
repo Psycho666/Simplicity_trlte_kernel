@@ -471,7 +471,11 @@ static void do_darkness_timer(struct work_struct *work)
 {
 	struct cpufreq_darkness_cpuinfo *darkness_cpuinfo;
 	int delay;
+<<<<<<< HEAD
 	unsigned int cpu;
+=======
+	unsigned int cpu = this_darkness_cpuinfo->cpu;
+>>>>>>> 2d4b3e4... cpufreq: Update cpugovernors
 
 	darkness_cpuinfo =	container_of(work, struct cpufreq_darkness_cpuinfo, work.work);
 	cpu = darkness_cpuinfo->cpu;
@@ -486,23 +490,39 @@ static void do_darkness_timer(struct work_struct *work)
 		delay -= jiffies % delay;
 	}
 
+<<<<<<< HEAD
 #ifdef CONFIG_CPU_EXYNOS4210
 	mod_delayed_work_on(cpu, system_wq, &darkness_cpuinfo->work, delay);
 #else
 	queue_delayed_work_on(cpu, system_wq, &darkness_cpuinfo->work, delay);
 #endif
 	mutex_unlock(&darkness_cpuinfo->timer_mutex);
+=======
+	mod_delayed_work_on(cpu, system_wq,
+			&this_darkness_cpuinfo->work, delay);
+	mutex_unlock(&this_darkness_cpuinfo->timer_mutex);
+>>>>>>> 2d4b3e4... cpufreq: Update cpugovernors
 }
 
 static int cpufreq_governor_darkness(struct cpufreq_policy *policy,
 				unsigned int event)
 {
+<<<<<<< HEAD
 	unsigned int cpu;
 	struct cpufreq_darkness_cpuinfo *this_darkness_cpuinfo;
 	int rc, delay;
 
 	cpu = policy->cpu;
 	this_darkness_cpuinfo = &per_cpu(od_darkness_cpuinfo, cpu);
+=======
+	struct cpufreq_darkness_cpuinfo *this_darkness_cpuinfo;
+	unsigned int cpu = policy->cpu;
+	int io_busy = darkness_tuners_ins.io_is_busy;
+	int rc, delay;
+
+	this_darkness_cpuinfo = &per_cpu(od_darkness_cpuinfo, cpu);
+	this_darkness_cpuinfo->cpu = cpu;
+>>>>>>> 2d4b3e4... cpufreq: Update cpugovernors
 
 	switch (event) {
 	case CPUFREQ_GOV_START:
