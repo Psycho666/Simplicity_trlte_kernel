@@ -1,0 +1,1 @@
+cmd_net/l2tp/built-in.o :=  /home/justin/android/toolchains/arm-cortex_a15-linux-gnueabihf-linaro_4.9.1/bin/arm-cortex_a15-linux-gnueabihf-ld -EL    -r -o net/l2tp/built-in.o net/l2tp/l2tp_core.o net/l2tp/l2tp_ppp.o net/l2tp/l2tp_netlink.o net/l2tp/l2tp_debugfs.o 

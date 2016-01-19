@@ -1,0 +1,6 @@
+kernel/drivers/leds/led-class.ko
+kernel/drivers/leds/leds-qpnp.ko
+kernel/drivers/leds/leds-max77828-rgb.ko
+kernel/drivers/leds/leds-max77843-rgb.ko
+kernel/drivers/leds/trigger/ledtrig-backlight.ko
+kernel/drivers/leds/trigger/ledtrig-default-on.ko

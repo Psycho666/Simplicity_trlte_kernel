@@ -1,0 +1,1 @@
+cmd_sound/soc/codecs/snd-soc-wcd9320.o := /home/justin/android/toolchains/arm-cortex_a15-linux-gnueabihf-linaro_4.9.1/bin/arm-cortex_a15-linux-gnueabihf-ld -EL    -r -o sound/soc/codecs/snd-soc-wcd9320.o sound/soc/codecs/wcd9320.o sound/soc/codecs/wcd9320-tables.o 

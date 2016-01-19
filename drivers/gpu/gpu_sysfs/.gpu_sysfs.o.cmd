@@ -1,0 +1,1 @@
+cmd_drivers/gpu/gpu_sysfs/gpu_sysfs.o := /home/justin/android/toolchains/arm-cortex_a15-linux-gnueabihf-linaro_4.9.1/bin/arm-cortex_a15-linux-gnueabihf-ld -EL    -r -o drivers/gpu/gpu_sysfs/gpu_sysfs.o drivers/gpu/gpu_sysfs/gpu_sysfs_main.o drivers/gpu/gpu_sysfs/gpu_sysfs_util.o drivers/gpu/gpu_sysfs/gpu_sysfs_target_kgsl.o 

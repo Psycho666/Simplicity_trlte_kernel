@@ -1,0 +1,1 @@
+cmd_net/ipc_router/built-in.o :=  /home/justin/android/toolchains/arm-cortex_a15-linux-gnueabihf-linaro_4.9.1/bin/arm-cortex_a15-linux-gnueabihf-ld -EL    -r -o net/ipc_router/built-in.o net/ipc_router/ipc_router_core.o net/ipc_router/ipc_router_socket.o net/ipc_router/ipc_router_security.o 

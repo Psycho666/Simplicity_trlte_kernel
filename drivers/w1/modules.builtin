@@ -1,0 +1,7 @@
+kernel/drivers/w1/wire.ko
+kernel/drivers/w1/masters/w1-gpio-msm.ko
+kernel/drivers/w1/slaves/w1_ds28el35.ko
+kernel/drivers/w1/slaves/w1_ds28el35/ecdsa_software_gmp.ko
+kernel/drivers/w1/slaves/w1_ds28el35/gnu_modular_sqrt.ko
+kernel/drivers/w1/slaves/w1_ds28el35/sha256_software.ko
+kernel/drivers/w1/slaves/w1_ds28el35/mini-gmp.ko

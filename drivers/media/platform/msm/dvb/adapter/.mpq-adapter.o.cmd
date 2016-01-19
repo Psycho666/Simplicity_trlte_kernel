@@ -1,0 +1,1 @@
+cmd_drivers/media/platform/msm/dvb/adapter/mpq-adapter.o := /home/justin/android/toolchains/arm-cortex_a15-linux-gnueabihf-linaro_4.9.1/bin/arm-cortex_a15-linux-gnueabihf-ld -EL    -r -o drivers/media/platform/msm/dvb/adapter/mpq-adapter.o drivers/media/platform/msm/dvb/adapter/mpq_adapter.o drivers/media/platform/msm/dvb/adapter/mpq_stream_buffer.o 

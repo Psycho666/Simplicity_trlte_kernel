@@ -1,0 +1,1 @@
+cmd_drivers/firmware/built-in.o :=  rm -f drivers/firmware/built-in.o; /home/justin/android/toolchains/arm-cortex_a15-linux-gnueabihf-linaro_4.9.1/bin/arm-cortex_a15-linux-gnueabihf-ar rcsD drivers/firmware/built-in.o

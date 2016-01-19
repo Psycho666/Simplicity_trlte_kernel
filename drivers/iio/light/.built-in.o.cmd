@@ -1,0 +1,1 @@
+cmd_drivers/iio/light/built-in.o :=  rm -f drivers/iio/light/built-in.o; /home/justin/android/toolchains/arm-cortex_a15-linux-gnueabihf-linaro_4.9.1/bin/arm-cortex_a15-linux-gnueabihf-ar rcsD drivers/iio/light/built-in.o

@@ -1,0 +1,1 @@
+cmd_drivers/gpu/built-in.o :=  /home/justin/android/toolchains/arm-cortex_a15-linux-gnueabihf-linaro_4.9.1/bin/arm-cortex_a15-linux-gnueabihf-ld -EL    -r -o drivers/gpu/built-in.o drivers/gpu/drm/built-in.o drivers/gpu/vga/built-in.o drivers/gpu/msm/built-in.o drivers/gpu/gpu_sysfs/built-in.o 

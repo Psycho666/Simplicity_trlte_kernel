@@ -1,0 +1,3 @@
+kernel/drivers/sensorhub/atmel/max_notchfilter/downsample.ko
+kernel/drivers/sensorhub/atmel/max_notchfilter/fixed_fir_filter.ko
+kernel/drivers/sensorhub/atmel/max_notchfilter/fixed_iir_filter.ko

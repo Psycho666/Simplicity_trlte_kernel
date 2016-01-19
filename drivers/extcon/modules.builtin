@@ -1,0 +1,3 @@
+kernel/drivers/extcon/extcon-class.ko
+kernel/drivers/extcon/extcon-max77828.ko
+kernel/drivers/extcon/extcon-max77843.ko
