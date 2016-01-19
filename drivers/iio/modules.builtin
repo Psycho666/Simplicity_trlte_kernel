@@ -1,2 +1,0 @@
-kernel/drivers/iio/industrialio.ko
-kernel/drivers/iio/kfifo_buf.ko

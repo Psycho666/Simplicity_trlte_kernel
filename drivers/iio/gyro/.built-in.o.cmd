@@ -1,1 +1,0 @@
-cmd_drivers/iio/gyro/built-in.o :=  rm -f drivers/iio/gyro/built-in.o; /home/justin/android/toolchains/arm-cortex_a15-linux-gnueabihf-linaro_4.9.1/bin/arm-cortex_a15-linux-gnueabihf-ar rcsD drivers/iio/gyro/built-in.o

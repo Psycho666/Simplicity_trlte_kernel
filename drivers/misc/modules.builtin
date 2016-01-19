@@ -1,7 +1,0 @@
-kernel/drivers/misc/ice40xx.ko
-kernel/drivers/misc/isa1200.ko
-kernel/drivers/misc/qseecom.ko
-kernel/drivers/misc/tzic.ko
-kernel/drivers/misc/ti_drv2667.ko
-kernel/drivers/misc/qpnp-misc.ko
-kernel/drivers/misc/apq8084_dock.ko

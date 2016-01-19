@@ -1,3 +1,0 @@
-kernel/drivers/scsi/ufs/ufshcd.ko
-kernel/drivers/scsi/ufs/ufshcd-pltfrm.ko
-kernel/drivers/scsi/ufs/ufs_test.ko

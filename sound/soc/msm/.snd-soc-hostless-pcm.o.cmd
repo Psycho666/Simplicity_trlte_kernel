@@ -1,1 +1,0 @@
-cmd_sound/soc/msm/snd-soc-hostless-pcm.o := /home/justin/android/toolchains/arm-cortex_a15-linux-gnueabihf-linaro_4.9.1/bin/arm-cortex_a15-linux-gnueabihf-ld -EL    -r -o sound/soc/msm/snd-soc-hostless-pcm.o sound/soc/msm/msm-pcm-hostless.o 

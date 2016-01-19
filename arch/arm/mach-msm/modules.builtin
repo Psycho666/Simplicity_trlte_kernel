@@ -1,7 +1,0 @@
-kernel/arch/arm/mach-msm/subsys-pil-tz.ko
-kernel/arch/arm/mach-msm/rpm_stats.ko
-kernel/arch/arm/mach-msm/rpm_master_stat.ko
-kernel/arch/arm/mach-msm/rpm_log.ko
-kernel/arch/arm/mach-msm/tz_log.ko
-kernel/arch/arm/mach-msm/hsic_sysmon.ko
-kernel/arch/arm/mach-msm/board-extcon-connector.ko

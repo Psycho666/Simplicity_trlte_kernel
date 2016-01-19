@@ -1,4 +1,0 @@
-kernel/drivers/input/keyboard/cypress_touchkey_t/cypress-touchkey.ko
-kernel/drivers/input/keyboard/cypress_touchkey_t/cy8cmbr_swd.ko
-kernel/drivers/input/keyboard/cypress_touchkey_t/SWD_PacketLayer.ko
-kernel/drivers/input/keyboard/cypress_touchkey_t/SWD_UpperPacketLayer.ko

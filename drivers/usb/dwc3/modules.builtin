@@ -1,6 +1,0 @@
-kernel/drivers/usb/dwc3/dwc3.ko
-kernel/drivers/usb/dwc3/dbm-1_4.ko
-kernel/drivers/usb/dwc3/dbm-1_5.ko
-kernel/drivers/usb/dwc3/dwc3-msm.ko
-kernel/drivers/usb/dwc3/dbm.ko
-kernel/drivers/usb/dwc3/dwc3-pci.ko

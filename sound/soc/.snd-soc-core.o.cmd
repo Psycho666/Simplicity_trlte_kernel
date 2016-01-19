@@ -1,1 +1,0 @@
-cmd_sound/soc/snd-soc-core.o := /home/justin/android/toolchains/arm-cortex_a15-linux-gnueabihf-linaro_4.9.1/bin/arm-cortex_a15-linux-gnueabihf-ld -EL    -r -o sound/soc/snd-soc-core.o sound/soc/soc-core.o sound/soc/soc-dapm.o sound/soc/soc-jack.o sound/soc/soc-cache.o sound/soc/soc-utils.o sound/soc/soc-pcm.o sound/soc/soc-compress.o sound/soc/soc-io.o 

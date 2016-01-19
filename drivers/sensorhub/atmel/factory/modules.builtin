@@ -1,9 +1,0 @@
-kernel/drivers/sensorhub/atmel/factory/accel_icm20610.ko
-kernel/drivers/sensorhub/atmel/factory/gyro_icm20610.ko
-kernel/drivers/sensorhub/atmel/factory/magnetic_ak09911c.ko
-kernel/drivers/sensorhub/atmel/factory/light_tmg399x.ko
-kernel/drivers/sensorhub/atmel/factory/prox_tmg399x.ko
-kernel/drivers/sensorhub/atmel/factory/gesture_tmg399x.ko
-kernel/drivers/sensorhub/atmel/factory/pressure_lps25h.ko
-kernel/drivers/sensorhub/atmel/factory/mcu_atuc128l5har.ko
-kernel/drivers/sensorhub/atmel/factory/barcode_emul_tmg3992.ko

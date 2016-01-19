@@ -1,1 +1,0 @@
-cmd_drivers/gpio/built-in.o :=  /home/justin/android/toolchains/arm-cortex_a15-linux-gnueabihf-linaro_4.9.1/bin/arm-cortex_a15-linux-gnueabihf-ld -EL    -r -o drivers/gpio/built-in.o drivers/gpio/devres.o drivers/gpio/gpiolib.o drivers/gpio/gpiolib-of.o drivers/gpio/gpio-msm-common.o drivers/gpio/gpio-msm-v3.o drivers/gpio/gpio-pcal6416a.o drivers/gpio/qpnp-pin.o 

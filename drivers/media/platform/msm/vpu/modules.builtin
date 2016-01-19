@@ -1,9 +1,0 @@
-kernel/drivers/media/platform/msm/vpu/vpu_v4l2.ko
-kernel/drivers/media/platform/msm/vpu/vpu_ioctl.ko
-kernel/drivers/media/platform/msm/vpu/vpu_configuration.ko
-kernel/drivers/media/platform/msm/vpu/vpu_translate.ko
-kernel/drivers/media/platform/msm/vpu/vpu_vb2_queue.ko
-kernel/drivers/media/platform/msm/vpu/vpu_resources.ko
-kernel/drivers/media/platform/msm/vpu/vpu_channel.ko
-kernel/drivers/media/platform/msm/vpu/vpu_hfi.ko
-kernel/drivers/media/platform/msm/vpu/vpu_bus_clock.ko

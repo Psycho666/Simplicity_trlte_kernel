@@ -1,1 +1,0 @@
-cmd_drivers/char/built-in.o :=  /home/justin/android/toolchains/arm-cortex_a15-linux-gnueabihf-linaro_4.9.1/bin/arm-cortex_a15-linux-gnueabihf-ld -EL    -r -o drivers/char/built-in.o drivers/char/mem.o drivers/char/random.o drivers/char/misc.o drivers/char/hw_random/built-in.o drivers/char/diag/built-in.o drivers/char/adsprpc.o drivers/char/msm_smd_pkt.o 

@@ -1,2 +1,0 @@
-kernel/drivers/irled/gpio_ir_ndelay.ko
-kernel/drivers/irled/gpio_ir.ko

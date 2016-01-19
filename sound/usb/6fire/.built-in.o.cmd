@@ -1,1 +1,0 @@
-cmd_sound/usb/6fire/built-in.o :=  rm -f sound/usb/6fire/built-in.o; /home/justin/android/toolchains/arm-cortex_a15-linux-gnueabihf-linaro_4.9.1/bin/arm-cortex_a15-linux-gnueabihf-ar rcsD sound/usb/6fire/built-in.o

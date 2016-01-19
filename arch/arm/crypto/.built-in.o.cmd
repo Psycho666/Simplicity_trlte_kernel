@@ -1,1 +1,0 @@
-cmd_arch/arm/crypto/built-in.o :=  /home/justin/android/toolchains/arm-cortex_a15-linux-gnueabihf-linaro_4.9.1/bin/arm-cortex_a15-linux-gnueabihf-ld -EL    -r -o arch/arm/crypto/built-in.o arch/arm/crypto/first_file_asm.o arch/arm/crypto/aes-arm.o arch/arm/crypto/sha1-arm.o arch/arm/crypto/last_file_asm.o 

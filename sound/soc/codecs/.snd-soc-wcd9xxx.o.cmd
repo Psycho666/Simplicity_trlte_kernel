@@ -1,1 +1,0 @@
-cmd_sound/soc/codecs/snd-soc-wcd9xxx.o := /home/justin/android/toolchains/arm-cortex_a15-linux-gnueabihf-linaro_4.9.1/bin/arm-cortex_a15-linux-gnueabihf-ld -EL    -r -o sound/soc/codecs/snd-soc-wcd9xxx.o sound/soc/codecs/wcd9xxx-resmgr.o sound/soc/codecs/wcd9xxx-mbhc.o sound/soc/codecs/wcd9xxx-common.o 

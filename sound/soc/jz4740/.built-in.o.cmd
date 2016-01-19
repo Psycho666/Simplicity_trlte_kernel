@@ -1,1 +1,0 @@
-cmd_sound/soc/jz4740/built-in.o :=  rm -f sound/soc/jz4740/built-in.o; /home/justin/android/toolchains/arm-cortex_a15-linux-gnueabihf-linaro_4.9.1/bin/arm-cortex_a15-linux-gnueabihf-ar rcsD sound/soc/jz4740/built-in.o

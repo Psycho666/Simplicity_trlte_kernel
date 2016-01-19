@@ -1,1 +1,0 @@
-cmd_drivers/net/ethernet/atheros/atl1c/atl1c.o := /home/justin/android/toolchains/arm-cortex_a15-linux-gnueabihf-linaro_4.9.1/bin/arm-cortex_a15-linux-gnueabihf-ld -EL    -r -o drivers/net/ethernet/atheros/atl1c/atl1c.o drivers/net/ethernet/atheros/atl1c/atl1c_main.o drivers/net/ethernet/atheros/atl1c/atl1c_hw.o drivers/net/ethernet/atheros/atl1c/atl1c_ethtool.o 

@@ -1,4 +1,0 @@
-kernel/drivers/platform/msm/qpnp-power-on.ko
-kernel/drivers/platform/msm/qpnp-clkdiv.ko
-kernel/drivers/platform/msm/qpnp-usbdetect.ko
-kernel/drivers/platform/msm/qca1530.ko

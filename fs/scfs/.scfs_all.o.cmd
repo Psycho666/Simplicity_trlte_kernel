@@ -1,1 +1,0 @@
-cmd_fs/scfs/scfs_all.o := /home/justin/android/toolchains/arm-cortex_a15-linux-gnueabihf-linaro_4.9.1/bin/arm-cortex_a15-linux-gnueabihf-ld -EL    -r -o fs/scfs/scfs_all.o fs/scfs/scfs.o fs/scfs/super.o fs/scfs/file.o fs/scfs/inode.o fs/scfs/mmap.o fs/scfs/compress.o 

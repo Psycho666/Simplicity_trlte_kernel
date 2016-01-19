@@ -1,5 +1,0 @@
-kernel/drivers/regulator/fixed.ko
-kernel/drivers/regulator/max77826.ko
-kernel/drivers/regulator/s2mpb01.ko
-kernel/drivers/regulator/stub-regulator.ko
-kernel/drivers/regulator/qpnp-regulator.ko
