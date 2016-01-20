@@ -411,6 +411,7 @@ EXPORT_SYMBOL_GPL(wait_for_device_probe);
 int driver_probe_device(struct device_driver *drv, struct device *dev)
 {
 	int ret = 0;
+	int local_trigger_count = atomic_read(&deferred_trigger_count);
 
 	if (!device_is_registered(dev))
 		return -ENODEV;
