@@ -2222,6 +2222,11 @@ void sock_net_set(struct sock *sk, struct net *net)
 	write_pnet(&sk->sk_net, net);
 }
 
+bool sk_ns_capable(const struct sock *sk,
+		   struct user_namespace *user_ns, int cap);
+bool sk_capable(const struct sock *sk, int cap);
+bool sk_net_capable(const struct sock *sk, int cap);
+
 /*
  * Kernel sockets, f.e. rtnl or icmp_socket, are a part of a namespace.
  * They should not hold a reference to a namespace in order to allow
