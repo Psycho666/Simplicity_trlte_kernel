@@ -5441,6 +5441,7 @@
 			interrupt-names = "hc_irq", "pwr_irq";
 			qcom,bus-width = <0x8>;
 			qcom,cpu-dma-latency-us = <0xc8>;
+			qcom,wakeup-on-idle;
 			qcom,msm-bus,name = "sdhc1";
 			qcom,msm-bus,num-cases = <0x9>;
 			qcom,msm-bus,num-paths = <0x1>;
@@ -5474,6 +5475,7 @@
 			interrupt-names = "core_irq";
 			qcom,bus-width = <0x4>;
 			qcom,cpu-dma-latency-us = <0xc8>;
+			qcom,wakeup-on-idle;
 			qcom,msm-bus,name = "sdcc2";
 			qcom,msm-bus,num-cases = <0x8>;
 			qcom,msm-bus,num-paths = <0x1>;
