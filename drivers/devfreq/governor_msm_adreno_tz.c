@@ -84,6 +84,12 @@ static void _update_cutoff(struct devfreq_msm_adreno_tz_data *priv,
 	}
 }
 
+#ifdef CONFIG_SIMPLE_GPU_ALGORITHM
+extern int simple_gpu_active;
+extern int simple_gpu_algorithm(int level,
+				struct devfreq_msm_adreno_tz_data *priv);
+#endif
+
 #ifdef CONFIG_ADRENO_IDLER
 extern int adreno_idler(struct devfreq_dev_status stats, struct devfreq *devfreq,
 		 unsigned long *freq);
@@ -119,15 +125,6 @@ static int tz_get_target_freq(struct devfreq *devfreq, unsigned long *freq,
 	*freq = stats.current_frequency;
 	*flag = 0;
 
-	/*
-	 * Force to use & record as min freq when system has
-	 * entered pm-suspend or screen-off state.
-	 */
-	if (suspended || power_suspended) {
-		*freq = devfreq->profile->freq_table[devfreq->profile->max_state - 1];
-		return 0;
-	}
-
 #ifdef CONFIG_ADRENO_IDLER
 	if (adreno_idler(stats, devfreq, freq)) {
 		/* adreno_idler has asked to bail out now */
@@ -157,6 +154,7 @@ static int tz_get_target_freq(struct devfreq *devfreq, unsigned long *freq,
 	}
 
 	level = devfreq_get_freq_level(devfreq, stats.current_frequency);
+
 	if (level < 0) {
 		pr_err(TAG "bad freq %ld\n", stats.current_frequency);
 		return level;
@@ -169,10 +167,20 @@ static int tz_get_target_freq(struct devfreq *devfreq, unsigned long *freq,
 	if (priv->bin.busy_time > CEILING) {
 		val = -1 * level;
 	} else {
+#ifdef CONFIG_SIMPLE_GPU_ALGORITHM
+		if (simple_gpu_active != 0)
+			val = simple_gpu_algorithm(level, priv);
+		else
+			val = __secure_tz_entry3(TZ_UPDATE_ID,
+					level,
+					priv->bin.total_time,
+					priv->bin.busy_time);
+#else
 		val = __secure_tz_entry3(TZ_UPDATE_ID,
 				level,
 				priv->bin.total_time,
 				priv->bin.busy_time);
+#endif
 	}
 	priv->bin.total_time = 0;
 	priv->bin.busy_time = 0;
@@ -254,6 +262,11 @@ static int tz_start(struct devfreq *devfreq)
 	unsigned int t1, t2 = 2 * HIST;
 	int i, out, ret;
 
+	if (devfreq->data == NULL) {
+		pr_err(TAG "data is required for this governor\n");
+		return -EINVAL;
+	}
+
 	priv = devfreq->data;
 	priv->nb.notifier_call = tz_notify;
 
@@ -299,8 +312,6 @@ static int tz_stop(struct devfreq *devfreq)
 	struct devfreq_msm_adreno_tz_data *priv = devfreq->data;
 
 	kgsl_devfreq_del_notifier(devfreq->dev.parent, &priv->nb);
-	/* leaving the governor and cleaning the pointer to private data */
-	devfreq->data = NULL;
 	return 0;
 }
 
