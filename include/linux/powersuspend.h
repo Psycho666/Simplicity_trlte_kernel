@@ -48,7 +48,4 @@ void unregister_power_suspend(struct power_suspend *handler);
 void set_power_suspend_state_panel_hook(int new_state);
 
 #endif
-<<<<<<< HEAD
-=======
 
->>>>>>> 1304e3f... PowerSuspend v1.5

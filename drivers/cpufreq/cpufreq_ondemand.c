@@ -487,7 +487,7 @@ static int od_init(struct dbs_data *dbs_data)
 	u64 idle_time;
 	int cpu;
 
-	if (cpuboost_enable) cpuboost_enable = false;
+	
 	
 	tuners = kzalloc(sizeof(*tuners), GFP_KERNEL);
 	if (!tuners) {
