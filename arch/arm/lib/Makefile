@@ -50,3 +50,4 @@ lib-$(CONFIG_ARCH_SHARK)	+= io-shark.o
 
 $(obj)/csumpartialcopy.o:	$(obj)/csumpartialcopygeneric.S
 $(obj)/csumpartialcopyuser.o:	$(obj)/csumpartialcopygeneric.S
+endif
